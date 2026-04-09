@@ -2,7 +2,7 @@ nameOverride: "kafka"
 
 kafka:
   enabled: true
-  version: 3.8.0
+  version: 4.0.0
   cluster:
     replicas: 2
   zookeeper:

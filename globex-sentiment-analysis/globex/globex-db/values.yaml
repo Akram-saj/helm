@@ -4,9 +4,9 @@ fullnameOverride: ""
 replicaCount: 1
 
 image:
-  repository: quay.io/cloud-architecture-workshop/globex-store-db
+  repository: quay.io/ajaaveed/globex-store-db
   pullPolicy: IfNotPresent
-  tag: latest
+  tag: s390x
 
 podSecurityContext: 
   runAsNonRoot: true

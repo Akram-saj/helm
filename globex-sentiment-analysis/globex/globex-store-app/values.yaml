@@ -4,10 +4,10 @@ fullnameOverride: ""
 replicaCount: 1
 
 image:
-  repository: quay.io/cloud-architecture-workshop/globex-store
+  repository: quay.io/ajaaveed/globex-store
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: latest
+  tag: s390x
 
 podAnnotations: {}
 
