@@ -15,6 +15,7 @@ spec:
   kafka:
     version: {{ .Values.kafka.version }}
     metadataVersion: {{ .Values.kafka.metadataVersion }}
+    replicas: {{ .Values.kafka.kraft.replicas }}
     {{- if eq .Values.authorization "simple" }}
     authorization:
       type: simple
