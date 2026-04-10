@@ -1,0 +1,22 @@
+apiVersion: kafka.strimzi.io/v1beta2
+kind: KafkaNodePool
+metadata:
+  name: {{ .Values.kafka.kraft.poolName }}
+  labels:
+    strimzi.io/cluster: {{ include "kafka-broker.name" . }}
+    {{- include "kafka-broker.labels" . | nindent 4 }}
+  {{- if .Values.namespace }}
+  namespace: {{ .Values.namespace }}
+  {{- end }}
+  annotations:
+    {{- include "kafka-broker.argocd-syncwave" . | nindent 4 }}
+spec:
+  replicas: {{ .Values.kafka.kraft.replicas }}
+  roles:
+    - broker
+    - controller
+  storage:
+    type: ephemeral
+  resources:
+    {{- toYaml .Values.kafka.kraft.resources | nindent 4 }}
+
