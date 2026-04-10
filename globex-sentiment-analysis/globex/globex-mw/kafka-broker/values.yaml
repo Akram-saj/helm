@@ -2,18 +2,18 @@ nameOverride: "kafka"
 
 kafka:
   enabled: true
-  version: 4.0.0
+    #version: 4.0.0
   cluster:
     replicas: 2
-  zookeeper:
-    replicas: 3
-    resources:
-      limits:
-        cpu: 500m
-        memory: 512Mi
-      requests:
-        cpu: 100m
-        memory: 200M
+      #zookeeper:
+      #replicas: 3
+      #resources:
+      #limits:
+      #cpu: 500m
+      #memory: 512Mi
+      #requests:
+      #cpu: 100m
+      #memory: 200M
   config:
     autoCreateTopics: false
     defaultReplicationFactor: 2
@@ -21,7 +21,7 @@ kafka:
     transactionStateLogReplicationFactor: 2
     transactionStateLogMinIsr: 2
     minInsyncReplicas: 1
-    interBrokerProtocolVersion: '3.8.0'
+      #interBrokerProtocolVersion: '3.8.0'
   entityOperator:
     topicOperator:
       resources:
@@ -57,7 +57,7 @@ authentication:
   securityProtocol: ""
   saslMechanism: ""
 
-authorization: simple
+    #authorization: simple
 
 argocd:
   enabled: true
