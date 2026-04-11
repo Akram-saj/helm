@@ -49,7 +49,7 @@ authentication:
   securityProtocol: ""
   saslMechanism: ""
 
-    #authorization: simple
+authorization: simple
 
 argocd:
   enabled: true
