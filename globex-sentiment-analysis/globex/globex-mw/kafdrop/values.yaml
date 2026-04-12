@@ -1,9 +1,9 @@
 replicaCount: 1
 
 image:
-  repository: obsidiandynamics/kafdrop
+  repository: quay.io/ajaaveed/kafdrop
   pullPolicy: IfNotPresent
-  tag: "latest"
+  tag: "4.2.0-s390x"
 
 nameOverride: ""
 fullnameOverride: ""
