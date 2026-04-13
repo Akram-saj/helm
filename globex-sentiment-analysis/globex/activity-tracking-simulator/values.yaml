@@ -1,7 +1,7 @@
 replicaCount: 1
 
 image:
-  repository: quay.io/ajaaveed/activity-tracking-simulator:s390x
+  repository: quay.io/ajaaveed/activity-tracking-simulator
   pullPolicy: IfNotPresent
   tag: s390x
 
