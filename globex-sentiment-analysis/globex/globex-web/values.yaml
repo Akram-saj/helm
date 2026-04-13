@@ -1,10 +1,10 @@
 replicaCount: 1
 
 image:
-  repository: quay.io/cloud-architecture-workshop/globex-web
+  repository: quay.io/ajaaveed/globex-web
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: latest
+  tag: s390x
 
 serviceAccount:
   create: true

@@ -5,10 +5,10 @@
 replicaCount: 1
 
 image:
-  repository: quay.io/cloud-architecture-workshop/recommendation-engine
+  repository: quay.io/ajaaveed/recommendation-engine
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: latest
+  tag: s390x
 
 nameOverride: ""
 fullnameOverride: ""

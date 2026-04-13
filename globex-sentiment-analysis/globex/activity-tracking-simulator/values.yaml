@@ -1,9 +1,9 @@
 replicaCount: 1
 
 image:
-  repository: quay.io/cloud-architecture-workshop/activity-tracking-simulator
+  repository: quay.io/ajaaveed/activity-tracking-simulator:s390x
   pullPolicy: IfNotPresent
-  tag: latest
+  tag: s390x
 
 nameOverride: ""
 fullnameOverride: ""

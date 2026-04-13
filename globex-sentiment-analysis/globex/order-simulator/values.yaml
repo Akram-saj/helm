@@ -4,10 +4,10 @@ fullnameOverride: ""
 replicaCount: 1
 
 image:
-  repository: quay.io/cloud-architecture-workshop/order-simulator
+  repository: quay.io/ajaaveed/order-simulator
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: latest
+  tag: s390x
 
 podAnnotations: {}
 

@@ -1,10 +1,10 @@
 replicaCount: 1
 
 image:
-  repository: quay.io/cloud-architecture-workshop/activity-tracking-service
+  repository: quay.io/ajaaveed/activity-tracking-service
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: latest
+  tag: s390x
 
 nameOverride: ""
 fullnameOverride: ""

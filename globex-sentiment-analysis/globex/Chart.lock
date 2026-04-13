@@ -1,0 +1,33 @@
+dependencies:
+- name: globex-store-app
+  repository: file://globex-store-app
+  version: 0.1.0
+- name: globex-db
+  repository: file://globex-db
+  version: 0.1.0
+- name: globex-web
+  repository: file://globex-web
+  version: 0.1.0
+- name: recommendation-engine
+  repository: file://recommendation-engine
+  version: 0.1.0
+- name: activity-tracking
+  repository: file://activity-tracking
+  version: 0.1.0
+- name: activity-tracking-simulator
+  repository: file://activity-tracking-simulator
+  version: 0.1.0
+- name: order-simulator
+  repository: file://order-simulator
+  version: 0.1.0
+- name: kafka-broker
+  repository: file://globex-mw/kafka-broker
+  version: 0.1.0
+- name: kafka-topics
+  repository: file://globex-mw/kafka-topics
+  version: 0.1.0
+- name: kafdrop
+  repository: file://globex-mw/kafdrop
+  version: 0.1.0
+digest: sha256:898e9e950b3b9b49d42199f0aed77995f6060505bac3e885853b4ff4a151cf71
+generated: "2026-04-10T23:52:43.454892593-04:00"
