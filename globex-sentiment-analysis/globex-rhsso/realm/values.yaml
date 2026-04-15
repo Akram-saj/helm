@@ -6,9 +6,9 @@ selector:
 
 hook:
   image:
-    repository: quay.io/cloud-architecture-workshop/wait-for-statefulset-job
+    repository: quay.io/ajaaveed/rhsso-realm-hook-wait
     pullPolicy: IfNotPresent
-    tag: "92f5ae2-native"
+    tag: s390x
   serviceAccount:
     create: true
     name: ""
