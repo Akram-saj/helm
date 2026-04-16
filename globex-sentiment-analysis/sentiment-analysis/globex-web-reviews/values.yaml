@@ -3,9 +3,9 @@ nameOverride: globex-web
 replicaCount: 1
 
 image:
-  repository: quay.io/globex-sentiment-analysis/globex-web-reviews
+  repository: quay.io/ajaaveed/globex-web
   pullPolicy: IfNotPresent
-  tag: latest
+  tag: s390x
 
 serviceAccount:
   create: true
