@@ -1,9 +1,9 @@
 replicaCount: 1
 
 image:
-  repository: quay.io/globex-sentiment-analysis/product-reviews
+  repository: quay.io/ajaaveed/product-reviews
   pullPolicy: IfNotPresent
-  tag: latest
+  tag: s390x
 
 nameOverride: ""
 fullnameOverride: ""
