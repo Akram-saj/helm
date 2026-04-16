@@ -4,9 +4,9 @@ fullnameOverride: ""
 replicaCount: 1
 
 image:
-  repository: quay.io/globex-sentiment-analysis/product-reviews-db
+  repository: registry.redhat.io/rhel8/postgresql-12
   pullPolicy: IfNotPresent
-  tag: latest
+  tag: "1"
 
 podSecurityContext: 
   runAsNonRoot: true
