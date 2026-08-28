@@ -26,8 +26,5 @@ dependencies:
 - name: kafka-topics
   repository: file://globex-mw/kafka-topics
   version: 0.1.0
-- name: kafdrop
-  repository: file://globex-mw/kafdrop
-  version: 0.1.0
-digest: sha256:898e9e950b3b9b49d42199f0aed77995f6060505bac3e885853b4ff4a151cf71
-generated: "2026-04-10T23:52:43.454892593-04:00"
+digest: sha256:f893af50c17722311a451862fe110fbaaeeb793aaa5b93964b488046ea15d2a9
+generated: "2026-08-28T07:19:41.310689166-04:00"
