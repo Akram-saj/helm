@@ -3,6 +3,9 @@ apiVersion: console.streamshub.github.com/v1alpha1
 kind: Console
 metadata:
   name: streams-console
+  {{- if .Values.namespace }}
+  namespace: {{ .Values.namespace }}
+  {{- end }}
   labels:
     {{- include "kafka-broker.labels" . | nindent 4 }}
 spec:
@@ -14,4 +17,7 @@ spec:
       credentials:
         kafkaUser:
           name: streams-console
+          {{- if .Values.namespace }}
+          namespace: {{ .Values.namespace }}
+          {{- end }}
 {{- end }}

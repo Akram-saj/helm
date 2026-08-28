@@ -5,7 +5,7 @@ kafka-broker:
     securityProtocol: SASL_PLAINTEXT
     saslMechanism: SCRAM-SHA-512
     clientId: globex
-    clientSecret: globex-scram-fips-password-32chars!-scram-fips-password-32chars!
+    clientSecret: globex-scram-fips-password-32chars!
 kafka-topics:
   kafka:
     namespace:
