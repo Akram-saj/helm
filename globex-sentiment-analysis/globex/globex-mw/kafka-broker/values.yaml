@@ -54,3 +54,6 @@ authorization: simple
 argocd:
   enabled: true
   syncwave: "-2"
+
+console:
+  hostname: ""

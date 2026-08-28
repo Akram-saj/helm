@@ -18,3 +18,11 @@ spec:
     enabled: true
   DisableDefaultServiceMonitor: true
   profile: RHSSO
+
+  # FIPS clusters: RH-SSO 7.6 openshift-x509.sh uses openssl PKCS12 + keytool JKS.
+  # FIPS Java rejects that PBE path and the container exits 1 with empty logs.
+  keycloakDeploymentSpec:
+    experimental:
+      env:
+        - name: JAVA_TOOL_OPTIONS
+          value: "-Dcom.redhat.fips=false"

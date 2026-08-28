@@ -1,17 +1,11 @@
 kafka-broker:
+  console:
+    hostname: ""
   authentication:
     securityProtocol: SASL_PLAINTEXT
     saslMechanism: SCRAM-SHA-512
     clientId: globex
-    clientSecret: globex
+    clientSecret: globex-scram-fips-password-32chars!-scram-fips-password-32chars!
 kafka-topics:
   kafka:
     namespace:
-kafdrop:
-  kafka:
-    bootstrapServer: ""
-    securityProtocol: SASL_PLAINTEXT
-    saslMechanism: SCRAM-SHA-512
-    clientId: globex
-    clientSecret: globex
-    namespace: ""

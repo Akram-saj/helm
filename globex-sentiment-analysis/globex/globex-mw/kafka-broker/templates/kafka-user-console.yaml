@@ -1,0 +1,29 @@
+{{- if eq .Values.authentication.saslMechanism "SCRAM-SHA-512" }}
+apiVersion: kafka.strimzi.io/v1beta2
+kind: KafkaUser
+metadata:
+  name: streams-console
+  labels:
+    {{- include "kafka-broker.labels" . | nindent 4 }}
+    strimzi.io/cluster: {{ include "kafka-broker.name" . }}
+  annotations:
+    {{- include "kafka-broker.argocd-syncwave" . | nindent 4 }}
+spec:
+  authentication:
+    type: scram-sha-512
+  authorization:
+    type: simple
+    acls:
+      - operations: [Describe, DescribeConfigs]
+        resource: { type: cluster }
+      - operations: [Read, Describe, DescribeConfigs]
+        resource:
+          type: topic
+          name: "*"
+          patternType: literal
+      - operations: [Read, Describe]
+        resource:
+          type: group
+          name: "*"
+          patternType: literal
+{{- end }}
